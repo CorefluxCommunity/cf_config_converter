@@ -60,11 +60,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/alex/tools/s7_tool/s7_tool/s7_tool.csproj",
-      "projectName": "s7_tool",
-      "projectPath": "/home/alex/tools/s7_tool/s7_tool/s7_tool.csproj",
+      "projectUniqueName": "/home/alex/tools/s7_tool/cf_config_converter/cf_config_converter.csproj",
+      "projectName": "cf_config_converter",
+      "projectPath": "/home/alex/tools/s7_tool/cf_config_converter/cf_config_converter.csproj",
       "packagesPath": "/home/alex/.nuget/packages/",
-      "outputPath": "/home/alex/tools/s7_tool/s7_tool/obj/",
+      "outputPath": "/home/alex/tools/s7_tool/cf_config_converter/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/alex/.nuget/NuGet/NuGet.Config"

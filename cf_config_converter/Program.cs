@@ -12,7 +12,7 @@ class Program
 #else
         if (args.Length < 1)
         {
-            Console.WriteLine("Usage: dotnet run <path>");
+            Console.WriteLine("Usage: cf_config_converter.exe <path>");
             return;
         }
 
