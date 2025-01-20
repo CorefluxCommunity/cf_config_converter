@@ -9,7 +9,7 @@ class Program
     public static void Main(string[] args)
     {
 #if DEBUG
-        string inputConfigFilePath = Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "config.json");
+        string inputConfigFilePath = Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "configs7old.json");
 #else
         if (args.Length < 1)
         {
@@ -49,7 +49,7 @@ class Program
         else if (jsonObject["ModbusParameters"] != null)
             return new ModbusConfig(jsonObject);
 
-        else if (jsonObject["EthernetIpParameters"] != null)
+        else if (jsonObject["EthernetIPParameters"] != null)
             return new EthernetConfig(jsonObject);
 
         else

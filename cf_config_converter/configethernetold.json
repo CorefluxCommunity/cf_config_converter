@@ -1,0 +1,68 @@
+{
+    "MQTTParameters": {
+        "Port": 1883,
+        "Address": "127.0.0.1",
+        "IsAnonymous": false,
+        "Username": "",
+        "Password": "",
+        "EnableTLS": false,
+        "EnableDebugTopic": true,
+        "DebugTopic": "Coreflux/Ethernet2mqtt/DebugTopic"
+    },
+    "EthernetIPParameters": {
+        "IP": "192.168.100.201",
+        "PollingMs": 500
+    },
+    "Tags": [
+        {
+            "Name": "example0",
+            "WriteDirection": 1,
+            "MQTTTopic": "some/topic0",
+            "MQTTQoS": 0,
+            "MQTTRetain": false,
+           
+            "DataType": "0",
+            "EnableJoinAttribute": false,
+            "ClassID": "4",
+            "InstanceID": "106",
+            "AttributeID": "3",
+            "JoinClassID": 0,
+            "JoinInstanceID": 0,
+            "JoinAttributeID": 0,
+            
+            "Bit": 0
+        },
+        {
+            "DataType": "10",
+            "EnableJoinAttribute": false,
+            "ClassID": "4",
+            "InstanceID": "103",
+            "AttributeID": "3",
+            "JoinClassID": 0,
+            "JoinInstanceID": 0,
+            "JoinAttributeID": 0,
+            "Name": "example1",
+            "WriteDirection": 1,
+            "MQTTTopic": "some/topic1",
+            "MQTTQoS": 0,
+            "MQTTRetain": false,
+            "Bit": 0
+        },
+        {
+            "DataType": "10",
+            "EnableJoinAttribute": false,
+            "ClassID": "4",
+            "InstanceID": "101",
+            "AttributeID": "3",
+            "JoinClassID": "0",
+            "JoinInstanceID": "0",
+            "JoinAttributeID": "0",
+            "Name": "RecipeID",
+            "WriteDirection": "0",
+            "MQTTTopic": "SomeWrite/RecipeID",
+            "MQTTQoS": "0",
+            "MQTTRetain": false,
+            "Bit": "0"
+        }
+    ]
+}

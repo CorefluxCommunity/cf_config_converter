@@ -1,0 +1,183 @@
+{
+  "MQTTParameters": {
+    "Port": 1883,
+    "Address": "127.0.0.1",
+    "IsAnonymous": false,
+    "Username": "root",
+    "Password": "coreflux",
+    "EnableTLS": false,
+    "EnableDebugTopic": true,
+    "DebugTopic": "old/debug"
+  },
+  "SiemensParameters": {
+    "IP": "192.168.100.200",
+    "PLCRack": 0,
+    "PLCSlot": 1,
+    "Retries": 0,
+    "RetryTimeInSeconds": 8,
+    "RefreshTimeInMs": "50",
+    "ConnectionResource": 3
+  },
+  "Tags": [
+    {
+      "Name": "counter",
+      "WriteDirection": "0",
+      "MQTTTopic": "s7/old",
+      "MQTTQoS": "0",
+      "MQTTRetain": false,
+      "VariableType": 2,
+      "Variable": "DB3.DBW0",
+      "Behaviour": 0
+    },
+    {
+      "Name": "IN_Bool",
+      "WriteDirection": "0",
+      "MQTTTopic": "old/DB9.DBW0",
+      "MQTTQoS": "0",
+      "MQTTRetain": false,
+      "VariableType": 2,
+      "Variable": "DB9.DBW0",
+      "Behaviour": 0
+    },
+    {
+      "Name": "OUT_Bool",
+      "WriteDirection": "0",
+      "MQTTTopic": "old/DB9.DBW2",
+      "MQTTQoS": "0",
+      "MQTTRetain": false,
+      "VariableType": 2,
+      "Variable": "DB9.DBW2",
+      "Behaviour": 0
+    },
+    {
+      "Name": "IN_Byte",
+      "WriteDirection": "0",
+      "MQTTTopic": "old/DB9.DBW4",
+      "MQTTQoS": "0",
+      "MQTTRetain": false,
+      "VariableType": 2,
+      "Variable": "DB9.DBW4",
+      "Behaviour": 0
+    },
+    {
+      "Name": "OUT_Byte",
+      "WriteDirection": "0",
+      "MQTTTopic": "old/DB9.DBW6",
+      "MQTTQoS": "0",
+      "MQTTRetain": false,
+      "VariableType": 2,
+      "Variable": "DB9.DBW6",
+      "Behaviour": 0
+    },
+    {
+      "Name": "IN_Int",
+      "WriteDirection": "0",
+      "MQTTTopic": "old/DB9.DBW8",
+      "MQTTQoS": "0",
+      "MQTTRetain": false,
+      "VariableType": 2,
+      "Variable": "DB9.DBW8",
+      "Behaviour": 0
+    },
+    {
+      "Name": "OUT_Int",
+      "WriteDirection": "0",
+      "MQTTTopic": "old/DB9.DBW10",
+      "MQTTQoS": "0",
+      "MQTTRetain": false,
+      "VariableType": 2,
+      "Variable": "DB9.DBW10",
+      "Behaviour": 0
+    },
+    {
+      "Name": "IN_Word",
+      "WriteDirection": "0",
+      "MQTTTopic": "old/DB9.DBW12",
+      "MQTTQoS": "0",
+      "MQTTRetain": false,
+      "VariableType": 2,
+      "Variable": "DB9.DBW12",
+      "Behaviour": 0
+    },
+    {
+      "Name": "OUT_Word",
+      "WriteDirection": "0",
+      "MQTTTopic": "old/DB9.DBW14",
+      "MQTTQoS": "0",
+      "MQTTRetain": false,
+      "VariableType": 2,
+      "Variable": "DB9.DBW14",
+      "Behaviour": 0
+    },
+    {
+      "Name": "IN_Real",
+      "WriteDirection": "0",
+      "MQTTTopic": "old/DB9.DBW16",
+      "MQTTQoS": "0",
+      "MQTTRetain": false,
+      "VariableType": 2,
+      "Variable": "DB9.DBW16",
+      "Behaviour": 0
+    },
+    {
+      "Name": "OUT_Real",
+      "WriteDirection": "0",
+      "MQTTTopic": "old/DB9.DBW18",
+      "MQTTQoS": "0",
+      "MQTTRetain": false,
+      "VariableType": 2,
+      "Variable": "DB9.DBW18",
+      "Behaviour": 0
+    },
+    {
+      "Name": "IN_DInt",
+      "WriteDirection": "0",
+      "MQTTTopic": "old/DB9.DBW20",
+      "MQTTQoS": "0",
+      "MQTTRetain": false,
+      "VariableType": 2,
+      "Variable": "DB9.DBW20",
+      "Behaviour": 0
+    },
+    {
+      "Name": "OUT_DInt",
+      "WriteDirection": "0",
+      "MQTTTopic": "old/DB9.DBW22",
+      "MQTTQoS": "0",
+      "MQTTRetain": false,
+      "VariableType": 2,
+      "Variable": "DB9.DBW22",
+      "Behaviour": 0
+    },
+    {
+      "Name": "IN_String",
+      "WriteDirection": "0",
+      "MQTTTopic": "old/DB9.DBW24",
+      "MQTTQoS": "0",
+      "MQTTRetain": false,
+      "VariableType": 2,
+      "Variable": "DB9.DBW24",
+      "Behaviour": 0
+    },
+    {
+      "Name": "OUT_String",
+      "WriteDirection": "0",
+      "MQTTTopic": "old/DB9.DBW26",
+      "MQTTQoS": "0",
+      "MQTTRetain": false,
+      "VariableType": 2,
+      "Variable": "DB9.DBW26",
+      "Behaviour": 0
+    },
+    {
+      "Name": "RedLamp",
+      "WriteDirection": "1",
+      "MQTTTopic": "old/M0.1",
+      "MQTTQoS": "0",
+      "MQTTRetain": false,
+      "VariableType": 0,
+      "Variable": "M0.1",
+      "Behaviour": 0
+    }
+  ]
+}
