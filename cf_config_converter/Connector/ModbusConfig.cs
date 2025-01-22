@@ -36,24 +36,20 @@ public class ModbusConfig : BaseConfig
         jsonObject["MqttParameters"]!["Username"] = jsonObject["MQTTParameters"]!["Username"];
         jsonObject["MqttParameters"]!["Password"] = jsonObject["MQTTParameters"]!["Password"];
         jsonObject["MqttParameters"]!["WithTLS"] = jsonObject["MQTTParameters"]!["EnableTLS"];
-        jsonObject["SiemensParameters"]!["Debug"] = jsonObject["MQTTParameters"]!["EnableDebugTopic"];
-        jsonObject["SiemensParameters"]!["DebugTopic"] = jsonObject["MQTTParameters"]!["DebugTopic"];
         jsonObject["MqttParameters"]!["ClientId"] = Guid.NewGuid().ToString("n").Substring(0, 8);
 
         jsonObject.Remove("MQTTParameters");
 
-        // Siemens Parameters
-
-        jsonObject["SiemensS7Parameters"] = new JObject();
-        jsonObject["SiemensS7Parameters"]!["PLCRack"] = (int)jsonObject["SiemensParameters"]!["PLCRack"]!;
-        jsonObject["SiemensS7Parameters"]!["PLCSlot"] = (int)jsonObject["SiemensParameters"]!["PLCSlot"]!;
-        jsonObject["SiemensS7Parameters"]!["Retries"] = (int)jsonObject["SiemensParameters"]!["Retries"]!;
-        jsonObject["SiemensS7Parameters"]!["RetryTimeInSeconds"] = (int)jsonObject["SiemensParameters"]!["RetryTimeInSeconds"]!;
-        jsonObject["SiemensS7Parameters"]!["Debug"] = (bool)jsonObject["SiemensParameters"]!["Debug"]!;
-        jsonObject["SiemensS7Parameters"]!["DebugTopic"] = jsonObject["SiemensParameters"]!["DebugTopic"]! != null ? jsonObject["SiemensParameters"]!["DebugTopic"]! : "";
-        jsonObject["SiemensS7Parameters"]!["IP"] = jsonObject["SiemensParameters"]!["IP"]!;
-        jsonObject["SiemensS7Parameters"]!["ConnectionType"] = (int)jsonObject["SiemensParameters"]!["ConnectionResource"]!;
-        jsonObject["SiemensS7Parameters"]!["RefreshTimeInMs"] = (int)jsonObject["SiemensParameters"]!["RefreshTimeInMs"]!;
+        // Modbus Parameters
+        jsonObject["ModbusParameters"]!["PLCRack"] = (int)jsonObject["SiemensParameters"]!["PLCRack"]!;
+        jsonObject["ModbusParameters"]!["PLCSlot"] = (int)jsonObject["SiemensParameters"]!["PLCSlot"]!;
+        jsonObject["ModbusParameters"]!["Retries"] = (int)jsonObject["SiemensParameters"]!["Retries"]!;
+        jsonObject["ModbusParameters"]!["RetryTimeInSeconds"] = (int)jsonObject["SiemensParameters"]!["RetryTimeInSeconds"]!;
+        jsonObject["ModbusParameters"]!["Debug"] = (bool)jsonObject["SiemensParameters"]!["Debug"]!;
+        jsonObject["ModbusParameters"]!["DebugTopic"] = jsonObject["SiemensParameters"]!["DebugTopic"]! != null ? jsonObject["SiemensParameters"]!["DebugTopic"]! : "";
+        jsonObject["ModbusParameters"]!["IP"] = jsonObject["SiemensParameters"]!["IP"]!;
+        jsonObject["ModbusParameters"]!["ConnectionType"] = (int)jsonObject["SiemensParameters"]!["ConnectionResource"]!;
+        jsonObject["ModbusParameters"]!["RefreshTimeInMs"] = (int)jsonObject["SiemensParameters"]!["RefreshTimeInMs"]!;
         jsonObject.Remove("SiemensParameters");
 
         // Tags

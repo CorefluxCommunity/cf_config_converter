@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("cf_config_converter")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4fcd8181e5ea7d4b007033d54166da55f9ca5197")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+65ac01bfce175dbca313fe4c8a0562d2e2fa04ca")]
 [assembly: System.Reflection.AssemblyProductAttribute("cf_config_converter")]
 [assembly: System.Reflection.AssemblyTitleAttribute("cf_config_converter")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

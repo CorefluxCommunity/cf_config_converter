@@ -1,0 +1,45 @@
+{
+    "_comment": "WARNING: DON'T DELETE OR MODIFY CONNECTORTYPE FIELD",
+    "connectorType": "coreflux_modbus2mqtt",
+    "config": {
+      "MqttParameters": {
+        "Port": 1883,
+        "Address": "127.0.0.1",
+        "IsAnonymous": true,
+        "Username": "root",
+        "Password": "coreflux",
+        "WithTLS": false
+      },
+      "Tags": [
+        {
+          "Name": "Tag_e5dd2172-1a0c-46b1-af25-c078bd7cae95",
+          "Route": 0,
+          "Publish": 0,
+          "PublishCycle": 60,
+          "MqttTopic": "Unmapped/tags/e5dd2172-1a0c-46b1-af25-c078bd7cae95",
+          "MqttRetain": false,
+          "MqttQos": 0,
+          "ModbusMemoryArea": 2,
+          "ModbusMemoryAddress": 0,
+          "ModbusDataType": 0,
+          "ModbusRegisterBit": 0,
+          "RegisterByte": 0,
+          "SwapByte": false,
+          "SwapWord": false
+        }
+      ],
+      "ModbusParameters": {
+        "Interface": 1,
+        "Port": 502,
+        "SerialPort": "COM3",
+        "IP": "127.0.0.1",
+        "PollingMs": 500,
+        "Retries": 3,
+        "BaudRate": 9600,
+        "StopBits": 0,
+        "Parity": 0,
+        "EndianType": 0,
+        "SlaveId": 1
+      }
+    }
+  }

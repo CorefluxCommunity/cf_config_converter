@@ -18,6 +18,8 @@ public class S7Config : BaseConfig
     {
         JObject newJson = Transform(JsonObject);
 
+        //HUB v<1.4 
+
         string outputFilePath = Path.Combine(Path.GetDirectoryName(path)!, "cf_config_converted", "coreflux_s72mqtt_config.json");
 
         if (!Directory.Exists(Path.Combine(outputFilePath, "..")))
@@ -25,6 +27,22 @@ public class S7Config : BaseConfig
 
         File.WriteAllText(outputFilePath, JsonConvert.SerializeObject(newJson, Formatting.Indented));
         Console.WriteLine($"Transformed JSON saved to: {outputFilePath}.");
+
+
+        //HUB V1.4+
+
+        outputFilePath = Path.Combine(Path.GetDirectoryName(path)!, "cf_config_converted", "v1.4_coreflux_s72mqtt_config.json");
+
+        JObject config14 = new JObject
+        {
+            ["_comment"] = "WARNING: DON'T DELETE OR MODIFY CONNECTORTYPE FIELD",
+            ["connectorType"] = "coreflux_s72mqtt",
+            ["config"] = newJson
+        };       
+
+        File.WriteAllText(outputFilePath, JsonConvert.SerializeObject(config14, Formatting.Indented));
+        Console.WriteLine($"Transformed JSON saved to: {outputFilePath}.");
+
     }
 
     private static JObject Transform(JObject jsonObject)

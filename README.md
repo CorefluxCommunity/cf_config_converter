@@ -8,7 +8,9 @@ The Coreflux Configuration Converter Tool now allows you to turn your old config
 cf_config_converter.exe <configuration_file_path>
 ```
 
-A folder will be created in the file path with the name `cf_config_converted` and, inside, the configuration ready to be imported into Coreflux HUB!
+A folder will be created in the file path with the name `cf_config_converted` and, inside, two configuration files: <br>
+- `coreflux_<assetname>_config.json`: To be used on the Coreflux HUB v1.3 and HUBLESS;
+- `v1.4_coreflux_<assetname>_config.json`: To be used on the Coreflux HUB v1.4 and HUBLESS;
 
 ### Available Connector Converters:
 
