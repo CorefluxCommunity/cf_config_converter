@@ -16,12 +16,28 @@ public class EthernetConfig : BaseConfig
     {
         JObject newJson = Transform(JsonObject);
 
+        // HUB v1.3-
+
         string outputFilePath = Path.Combine(Path.GetDirectoryName(path)!, "cf_config_converted", "coreflux_ethernetipmqtt_config.json");
 
         if (!Directory.Exists(Path.Combine(outputFilePath, "..")))
             Directory.CreateDirectory(Path.Combine(outputFilePath, ".."));
 
         File.WriteAllText(outputFilePath, JsonConvert.SerializeObject(newJson, Formatting.Indented));
+        Console.WriteLine($"Transformed JSON saved to: {outputFilePath}.");
+
+        //HUB v1.4+
+        
+        outputFilePath = Path.Combine(Path.GetDirectoryName(path)!, "cf_config_converted", "v1.4_coreflux_ethernetipmqtt_config.json");
+
+        JObject config14 = new JObject
+        {
+            ["_comment"] = "WARNING: DON'T DELETE OR MODIFY CONNECTORTYPE FIELD",
+            ["connectorType"] = "coreflux_ethernetipmqtt",
+            ["config"] = newJson
+        };       
+
+        File.WriteAllText(outputFilePath, JsonConvert.SerializeObject(config14, Formatting.Indented));
         Console.WriteLine($"Transformed JSON saved to: {outputFilePath}.");
     }
 

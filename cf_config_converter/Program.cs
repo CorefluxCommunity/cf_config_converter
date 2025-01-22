@@ -9,7 +9,7 @@ class Program
     public static void Main(string[] args)
     {
 #if DEBUG
-        string inputConfigFilePath = Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "configs7old.json");
+        string inputConfigFilePath = Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "configethernetold.json");
 #else
         if (args.Length < 1)
         {
