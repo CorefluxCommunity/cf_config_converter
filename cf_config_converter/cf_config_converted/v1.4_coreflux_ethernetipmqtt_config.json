@@ -1,0 +1,88 @@
+{
+  "_comment": "WARNING: DON'T DELETE OR MODIFY CONNECTORTYPE FIELD",
+  "connectorType": "coreflux_ethernetipmqtt",
+  "config": {
+    "Tags": [
+      {
+        "Name": "example0",
+        "Route": 0,
+        "MqttTopic": "some/topic0",
+        "QualityOfService": 0,
+        "MqttRetain": false,
+        "Publish": 2,
+        "DataType": 0,
+        "ClassID": 4,
+        "InstanceID": 106,
+        "AttributeID": 3,
+        "AttributeIndex": 0,
+        "EnableJoinAttribute": false,
+        "Length": 1,
+        "Bit": 0,
+        "JoinClassID": 0,
+        "JoinInstanceID": 0,
+        "JoinAttributeID": 0,
+        "JoinIndex": 0,
+        "JoinLength": 1,
+        "ClearNull": false
+      },
+      {
+        "Name": "example1",
+        "Route": 0,
+        "MqttTopic": "some/topic1",
+        "QualityOfService": 0,
+        "MqttRetain": false,
+        "Publish": 2,
+        "DataType": 10,
+        "ClassID": 4,
+        "InstanceID": 103,
+        "AttributeID": 3,
+        "AttributeIndex": 0,
+        "EnableJoinAttribute": false,
+        "Length": 1,
+        "Bit": 0,
+        "JoinClassID": 0,
+        "JoinInstanceID": 0,
+        "JoinAttributeID": 0,
+        "JoinIndex": 0,
+        "JoinLength": 1,
+        "ClearNull": false
+      },
+      {
+        "Name": "RecipeID",
+        "Route": 1,
+        "MqttTopic": "SomeWrite/RecipeID",
+        "QualityOfService": 0,
+        "MqttRetain": false,
+        "Publish": 2,
+        "DataType": 10,
+        "ClassID": 4,
+        "InstanceID": 101,
+        "AttributeID": 3,
+        "AttributeIndex": 0,
+        "EnableJoinAttribute": false,
+        "Length": 1,
+        "Bit": 0,
+        "JoinClassID": 0,
+        "JoinInstanceID": 0,
+        "JoinAttributeID": 0,
+        "JoinIndex": 0,
+        "JoinLength": 1,
+        "ClearNull": false
+      }
+    ],
+    "MqttParameters": {
+      "Port": 1883,
+      "Address": "127.0.0.1",
+      "IsAnonymous": false,
+      "Username": "",
+      "Password": "",
+      "WithTLS": false,
+      "ClientId": "112e6e65"
+    },
+    "EthernetIpParameters": {
+      "Ip": "192.168.100.201",
+      "PollingMs": 500,
+      "PortEthernet": 44818
+    }
+  }
+}

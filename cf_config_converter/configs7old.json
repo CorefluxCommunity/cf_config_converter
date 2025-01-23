@@ -1,0 +1,173 @@
+{
+  "MQTTParameters": {
+    "Port": 1883,
+    "Address": "127.0.0.1",
+    "IsAnonymous": false,
+    "Username": "root",
+    "Password": "coreflux",
+    "EnableTLS": false,
+    "EnableDebugTopic": true,
+    "DebugTopic": "$SYS/Coreflux/Plant1/Production/Line1/Debug"
+  },
+  "SiemensParameters": {
+    "IP": "192.168.100.200",
+    "PLCRack": 0,
+    "PLCSlot": 1,
+    "Retries": 0,
+    "RetryTimeInSeconds": 8,
+    "RefreshTimeInMs": "50",
+    "ConnectionResource": 3
+  },
+  "Tags": [
+    {
+      "Name": "IN_Bool",
+      "WriteDirection": "1",
+      "MQTTTopic": "CF/Porto/Office1/Lab/VarWrite/bBool",
+      "MQTTQoS": "0",
+      "MQTTRetain": false,
+      "VariableType": 0,
+      "Variable": "DB7.DBX0.0",
+      "Behaviour": 0
+    },
+    {
+      "Name": "OUT_Bool",
+      "WriteDirection": "0",
+      "MQTTTopic": "CF/Porto/Office1/Lab/VarRead/bBool",
+      "MQTTQoS": "0",
+      "MQTTRetain": false,
+      "VariableType": "0",
+      "Variable": "DB8.DBX0.0",
+      "Behaviour": "0"
+    },
+    {
+      "Name": "IN_Byte",
+      "WriteDirection": "1",
+      "MQTTTopic": "CF/Porto/Office1/Lab/VarWrite/byByte",
+      "MQTTQoS": "0",
+      "MQTTRetain": false,
+      "VariableType": "1",
+      "Variable": "DB7.DBB1",
+      "Behaviour": "0"
+    },
+    {
+      "Name": "OUT_Byte",
+      "WriteDirection": "0",
+      "MQTTTopic": "CF/Porto/Office1/Lab/VarRead/byByte",
+      "MQTTQoS": "0",
+      "MQTTRetain": false,
+      "VariableType": "1",
+      "Variable": "DB8.DBB1",
+      "Behaviour": "0"
+    },
+    {
+      "Name": "IN_Int",
+      "WriteDirection": "1",
+      "MQTTTopic": "CF/Porto/Office1/Lab/VarWrite/iInt",
+      "MQTTQoS": "0",
+      "MQTTRetain": false,
+      "VariableType": "2",
+      "Variable": "DB7.DBW2",
+      "Behaviour": "0"
+    },
+    {
+      "Name": "OUT_Int",
+      "WriteDirection": "0",
+      "MQTTTopic": "CF/Porto/Office1/Lab/VarRead/iInt",
+      "MQTTQoS": "0",
+      "MQTTRetain": false,
+      "VariableType": "2",
+      "Variable": "DB8.DBW2",
+      "Behaviour": "0"
+    },
+    {
+      "Name": "IN_Word",
+      "WriteDirection": "1",
+      "MQTTTopic": "CF/Porto/Office1/Lab/VarWrite/wWord",
+      "MQTTQoS": "0",
+      "MQTTRetain": false,
+      "VariableType": "3",
+      "Variable": "DB7.DBW4",
+      "Behaviour": "0"
+    },
+    {
+      "Name": "OUT_Word",
+      "WriteDirection": "0",
+      "MQTTTopic": "CF/Porto/Office1/Lab/VarRead/wWord",
+      "MQTTQoS": "0",
+      "MQTTRetain": false,
+      "VariableType": "3",
+      "Variable": "DB8.DBW4",
+      "Behaviour": "0"
+    },
+    {
+      "Name": "IN_Real",
+      "WriteDirection": "1",
+      "MQTTTopic": "CF/Porto/Office1/Lab/VarWrite/rReal",
+      "MQTTQoS": "0",
+      "MQTTRetain": false,
+      "VariableType": "5",
+      "Variable": "DB7.DBD22",
+      "Behaviour": "0"
+    },
+    {
+      "Name": "OUT_Real",
+      "WriteDirection": "0",
+      "MQTTTopic": "CF/Porto/Office1/Lab/VarRead/rReal",
+      "MQTTQoS": "0",
+      "MQTTRetain": false,
+      "VariableType": "5",
+      "Variable": "DB8.DBD22",
+      "Behaviour": "0"
+    },
+    {
+      "Name": "IN_DInt",
+      "WriteDirection": "1",
+      "MQTTTopic": "CF/Porto/Office1/Lab/VarWrite/DInt",
+      "MQTTQoS": "0",
+      "MQTTRetain": false,
+      "VariableType": "4",
+      "Variable": "DB7.DBD6",
+      "Behaviour": "0"
+    },
+    {
+      "Name": "OUT_DInt",
+      "WriteDirection": "0",
+      "MQTTTopic": "CF/Porto/Office1/Lab/VarRead/DInt",
+      "MQTTQoS": "0",
+      "MQTTRetain": false,
+      "VariableType": "4",
+      "Variable": "DB8.DBD6",
+      "Behaviour": "0"
+    },
+    {
+      "Name": "IN_String",
+      "WriteDirection": "1",
+      "MQTTTopic": "CF/Porto/Office1/Lab/VarWrite/String",
+      "MQTTQoS": "0",
+      "MQTTRetain": false,
+      "VariableType": "6",
+      "Variable": "DB7.DBB10 STRING 10",
+      "Behaviour": "0"
+    },
+    {
+      "Name": "OUT_String",
+      "WriteDirection": "0",
+      "MQTTTopic": "CF/Porto/Office1/Lab/VarRead/String",
+      "MQTTQoS": "0",
+      "MQTTRetain": false,
+      "VariableType": "6",
+      "Variable": "DB8.DBB10 STRING 10",
+      "Behaviour": "0"
+    },
+    {
+      "Name": "RedLamp",
+      "WriteDirection": "1",
+      "MQTTTopic": "CF/Porto/Office1/Lab/Lamp/RedLamp",
+      "MQTTQoS": "0",
+      "MQTTRetain": false,
+      "VariableType": 0,
+      "Variable": "M0.1",
+      "Behaviour": 0
+    }
+  ]
+}
