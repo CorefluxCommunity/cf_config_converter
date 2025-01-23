@@ -13,7 +13,7 @@ class Program
 #else
         if (args.Length < 1)
         {
-            Console.WriteLine("Usage: cf_config_converter.exe <path>");
+            Console.WriteLine("Usage:\n windows:\n cf_config_converter.exe <path>\n\n linux:\n ./cf_config_converter <path>");
             return;
         }
 
