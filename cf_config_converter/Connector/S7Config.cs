@@ -42,7 +42,6 @@ public class S7Config : BaseConfig
 
         File.WriteAllText(outputFilePath, JsonConvert.SerializeObject(config14, Formatting.Indented));
         Console.WriteLine($"Transformed JSON saved to: {outputFilePath}.");
-
     }
 
     private static JObject Transform(JObject jsonObject)

@@ -16,4 +16,4 @@ A folder will be created in the file path with the name `cf_config_converted` an
 
 - Siemens S7 Connector;
 - EthernetIp Connector;
-- Modbus Connector (tbd);
+- Modbus Connector;
