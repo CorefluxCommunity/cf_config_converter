@@ -5,7 +5,8 @@
 The Coreflux Configuration Conversion Tool allows for an easily conversion of old versions of connectors' configurations into the new updated configuration parameters.
 
 ### Prerequisites
-- The older configuration's file path
+- The older configuration's file path;
+- Coreflux HUB v1.3 or HUBLESS;
 
 ### Setup instructions
 1. Go to the *Releases* tab;
