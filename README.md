@@ -24,7 +24,7 @@ On linux, run this script:
 ```
 ./cf_config_converter <configuration_file_path>
 ```
-where configuration_file_path is the path for the configuration you want to convert.
+where `configuration_file_path` is the path for the configuration you want to convert.
 
 ### Output
 #### Success
